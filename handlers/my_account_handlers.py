@@ -119,17 +119,21 @@ async def handle_account_button(event: callback_query) -> None:
             ],
             [Button.inline("🚀 Начать рассылку во все чаты", f"broadcastAll_{user_id}"),
              Button.inline("❌ Остановить общую рассылку", f"StopBroadcastAll_{user_id}")],
-            [Button.inline("✔ Обновить информацию о группах", f"add_all_groups_{user_id}")],
+            [Button.inline("🔄 Обновить информацию о группах", f"add_all_groups_{user_id}")],
             [Button.inline("❌ Удалить этот аккаунт", f"delete_account_{user_id}")]
         ]
 
         # Показываем краткую информацию без загрузки названий групп
+        groups_info = f"📊 **Количество групп:** {groups_count}"
+        if groups_count > 100:
+            groups_info += f"\n⚠️ *Большое количество групп - операции могут занимать больше времени*"
+        
         await event.respond(
             f"📢 **Меню для аккаунта {username}:**\n"
             f"🚀 **Массовая рассылка:** {mass_active}\n\n"
             f"📌 **Имя:** {username}\n"
             f"📞 **Номер:** `+{phone}`\n\n"
-            f"📊 **Количество групп:** {groups_count}\n"
+            f"{groups_info}\n\n"
             f"💡 *Нажмите \"📋 Список групп\" для просмотра подробной информации*",
             buttons=buttons
         )
