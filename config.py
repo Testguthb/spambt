@@ -25,6 +25,36 @@ elif BOT_INSTANCE == 'bot4':
 elif BOT_INSTANCE == 'bot5':
     from decouple import Config, RepositoryEnv
     env_config = Config(RepositoryEnv('.env.bot5'))
+elif BOT_INSTANCE == 'bot6':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot6'))
+elif BOT_INSTANCE == 'bot7':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot7'))
+elif BOT_INSTANCE == 'bot8':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot8'))
+elif BOT_INSTANCE == 'bot9':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot9'))
+elif BOT_INSTANCE == 'bot10':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot10'))
+elif BOT_INSTANCE == 'bot11':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot11'))
+elif BOT_INSTANCE == 'bot12':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot12'))
+elif BOT_INSTANCE == 'bot13':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot13'))
+elif BOT_INSTANCE == 'bot14':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot14'))
+elif BOT_INSTANCE == 'bot15':
+    from decouple import Config, RepositoryEnv
+    env_config = Config(RepositoryEnv('.env.bot15'))
 else:
     from decouple import Config, RepositoryEnv
     env_config = Config(RepositoryEnv('.env.bot1'))
