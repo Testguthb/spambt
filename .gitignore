@@ -1,0 +1,33 @@
+*.db
+*.log
+*.sqlite
+*.session
+*.py[cod]
+.idea
+__pycache__/
+venv/
+Procfile
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+.sessions
+.env
+
+# Multi-bot configuration files
+.env.bot*
+
+# Multi-bot session directories
+.sessions_bot*
+
+# Multi-bot database files
+sessions_bot*.db
+
+# PM2 log files
+pm2_*.log
+
+# Bot-specific log files
+bot*_log.log
